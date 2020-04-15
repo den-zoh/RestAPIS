@@ -28,7 +28,7 @@ class ArticleSerializer(serializers.ModelSerializer):
 
     def validate_title(self, value):  # value of the field we want to check.
         if len(value) < 30:
-            raise serializers.ValidationError("The title is to be at least 30 chars long")
+            raise serializers.ValidationError("The title is to be at    least 30 chars long")
         return value
 
 
